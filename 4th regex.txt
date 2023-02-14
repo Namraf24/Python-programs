@@ -1,0 +1,16 @@
+02.14 9:25 AM
+4 WRITE A PROGRAM TO READ THE LINES WHICH DOES NOT CONTAIN THE 
+CHARACTERS ‘A’ FROM A FILE AND WRITE ONTO A ANOTHER FILE.
+import re
+f=open("text.txt","r") 
+txt=f.readlines() 
+print(txt)
+l=len(txt)
+f2=open("new.txt","w") 
+for i in range(0,l):
+ x=re.search('a',txt[i]) 
+ if not x:
+ f2.write(txt[i]) 
+f2.close()
+f2=open("new.txt","r") 
+print(f2.read())

@@ -1,0 +1,12 @@
+02.14 9:36 AM
+9 WRITE A PROGRAM TO OPEN A FILE READ ODD LINES FROM THE FILE AND 
+WRITE IT INTO A NEW FILE.
+f=open("text.txt","r") 
+lis=f.readlines()
+le=len(lis)
+f2=open("bh.txt","w") 
+for i in range(0,le,2):
+ f2.write(lis[i]) 
+f2.close()
+f2=open("bh.txt","r") 
+print(f2.read())

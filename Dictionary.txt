@@ -1,0 +1,7 @@
+02.14 9:22 AM
+Dictionary 
+str=input (“Enter a string”) 
+l=len(str)
+d = {str: l}
+print (‘dictionary is ‘) 
+print(d)

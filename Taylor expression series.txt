@@ -1,0 +1,17 @@
+02.14 9:27 AM
+Taylor expression series
+def fact(n,x): 
+ f=1
+ fact=1
+for i in range(1,n+1): 
+ f=f*x
+ fact=fact*i 
+return f,fact 
+import exp
+n=int(input("Enter n number:")) 
+x=int(input("Enter x value:")) 
+s=1
+for i in range(1,n+1): 
+ r1,r2=exp.fact(i,x) 
+ s=s+(r1/r2) 
+print("sum is",s)
